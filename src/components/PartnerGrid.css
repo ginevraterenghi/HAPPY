@@ -1,0 +1,163 @@
+.partners-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xxl);
+}
+
+.partner-type-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xl);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-sm);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Institutions Grid */
+.institutions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+.institution-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--border-color);
+  border-top: 3px solid var(--primary-color);
+  padding: var(--spacing-xl);
+  background-color: var(--bg-secondary);
+}
+
+.partner-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.partner-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.partner-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.partner-full-name {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.partner-role {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-muted);
+}
+
+.partner-link {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  align-self: flex-start;
+  color: var(--primary-color);
+  transition: all var(--transition-fast);
+}
+
+.partner-link:hover {
+  color: var(--primary-light);
+  text-shadow: 0 0 8px var(--border-glow);
+}
+
+/* Support Grid */
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.support-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  height: 100%;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+}
+
+.support-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support-badge {
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--primary-color);
+  background-color: rgba(0, 229, 255, 0.05);
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  margin-top: auto;
+}
+
+/* Logo Placeholders Graphics */
+.logo-placeholder-graphic {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 50px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+.logo-supsi {
+  background-color: rgba(255, 87, 34, 0.05);
+  color: var(--accent-color);
+  border-color: rgba(255, 87, 34, 0.3);
+}
+
+.logo-csi {
+  background-color: rgba(0, 229, 255, 0.05);
+  color: var(--primary-color);
+  border-color: rgba(0, 229, 255, 0.3);
+}
+
+.logo-placeholder-graphic:not(.logo-supsi):not(.logo-csi) {
+  background-color: rgba(255, 255, 255, 0.02);
+  color: var(--text-muted);
+  width: 80px;
+  height: 44px;
+  font-size: 0.75rem;
+  margin-bottom: var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .institutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,191 @@
+.diaries-page {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.diaries-grid {
+  margin-top: var(--spacing-xl);
+}
+
+.diary-info-card {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  padding: var(--spacing-xl) var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.card-tag {
+  font-size: 0.65rem;
+  color: var(--primary-color);
+  letter-spacing: 1.5px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.diary-info-card h3 {
+  font-size: 1.3rem;
+  color: var(--text-main);
+  margin-bottom: var(--spacing-md);
+}
+
+.diary-info-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+.diary-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+}
+
+.diary-list li {
+  position: relative;
+  padding-left: var(--spacing-md);
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.diary-list li strong {
+  color: var(--text-main);
+}
+
+.diary-list li::before {
+  content: '-';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+/* Steps list inside card */
+.diary-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  width: 100%;
+  margin-top: var(--spacing-sm);
+}
+
+.diary-steps .step-item {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem var(--spacing-md);
+  background-color: rgba(255, 255, 255, 0.005);
+}
+
+.diary-steps .step-num {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-right: var(--spacing-xs);
+}
+
+/* Console UI frame styling */
+.mock-ui-wrapper {
+  border: 1px solid var(--border-color);
+  padding: 0;
+  background-color: var(--bg-secondary);
+  overflow: hidden;
+  max-width: 600px;
+  margin: var(--spacing-xl) auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.mock-ui-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem var(--spacing-md);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mock-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.mock-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-red { background-color: #ff5f56; }
+.dot-yellow { background-color: #ffbd2e; }
+.dot-green { background-color: #27c93f; }
+
+.mock-title {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.mock-ui-body {
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.mock-form-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: var(--spacing-md);
+}
+
+.mock-form-header h3 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+}
+
+.mock-form-header p {
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+
+.mock-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.form-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: 0.5px;
+}
+
+.form-control {
+  border: 1px solid var(--border-color);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--text-main);
+  padding: 0.75rem var(--spacing-md);
+  font-size: 0.9rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.15);
+}
+
+.mock-disclaimer {
+  font-size: 0.7rem;
+  margin-top: var(--spacing-sm);
+  line-height: 1.4;
+}

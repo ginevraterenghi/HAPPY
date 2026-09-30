@@ -1,0 +1,90 @@
+.phase-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  border-left: 3px solid var(--primary-color);
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  height: 100%;
+}
+
+.phase-card::before {
+  content: '[ MILESTONE PHASE ]';
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  letter-spacing: 1.5px;
+  margin-bottom: var(--spacing-md);
+}
+
+.phase-card.featured {
+  border-left-color: var(--accent-color);
+  background-color: rgba(255, 87, 34, 0.02);
+  box-shadow: 0 0 15px rgba(255, 87, 34, 0.05);
+}
+
+.phase-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  width: 100%;
+}
+
+.phase-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background-color: rgba(0, 229, 255, 0.1);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.featured .phase-number {
+  background-color: rgba(255, 87, 34, 0.1);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.phase-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0;
+}
+
+.phase-highlight-box {
+  background-color: rgba(255, 87, 34, 0.05);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  border: 1px solid rgba(255, 87, 34, 0.2);
+  border-left: 3px solid var(--accent-color);
+  width: 100%;
+}
+
+.phase-highlight-text {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  margin-bottom: 0;
+}
+
+.phase-description {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 0;
+}

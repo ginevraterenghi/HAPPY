@@ -1,0 +1,178 @@
+.project-page {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Scientific Context and Stats */
+.scientific-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.scientific-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.scientific-text h2 {
+  font-size: 2rem;
+  color: var(--text-main);
+  font-weight: 800;
+}
+
+.stat-card {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stat-meta {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  letter-spacing: 1.5px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  line-height: 1;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 0 0 15px var(--border-glow);
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+.stat-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Detailed Phase Operational List */
+.phases-list-detailed {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.detailed-phase-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-xl) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.phase-badge-large {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  opacity: 0.8;
+  line-height: 1;
+}
+
+.phase-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.phase-tech {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 1.5px;
+}
+
+.phase-info h3 {
+  font-size: 1.35rem;
+  color: var(--text-main);
+  margin-bottom: var(--spacing-xs);
+}
+
+.phase-info p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+/* Biomechanical Schema Grid */
+.illustrations-grid-placeholders {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.ill-placeholder {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ill-box {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border: 1px solid var(--border-color);
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ill-svg {
+  width: 100%;
+  height: auto;
+}
+
+.ill-caption {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .scientific-container {
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .detailed-phase-row {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--spacing-xl);
+  }
+
+  .phase-badge-large {
+    flex-shrink: 0;
+    width: 60px;
+    font-size: 2.8rem;
+  }
+
+  .illustrations-grid-placeholders {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
